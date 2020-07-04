@@ -1,0 +1,118 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+.title--app {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 3em;
+    font-family: 'Oleo Script', cursive;
+}
+
+.list--wrapper{
+    width: 45em;
+    margin: 1em auto;
+}
+
+.list--form{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#input--list {
+    width: 80%;
+    height: 2.5em;
+    font-size: 1.2em;
+    padding-left: 0.4em;
+}
+
+#submit {
+    font-size: 1.5em;
+    padding: 0.3em 1.2em;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.list--list {
+    width: 100%;
+    margin-top: 5em;
+}
+.list--todo--wrapper {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom:  1em;
+    border-radius: 0.3em;
+}
+.list--todo--wrapper:hover{
+    background-color: rgb(236, 236, 236);
+}
+.list--todo--check {
+    width: 10%;
+    height: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    background :rgb(238, 230, 230);
+    color: white;
+}
+.list--todo--check .fas{
+    margin-top: 0.5em;
+}
+.list--todo--check:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.list--todo--item {
+    width: 80%;
+    height: 100%;
+    font-size: 1.5em;
+    overflow: hidden;
+    line-height: 2em;
+    padding-left: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.list--todo--delete{
+    width: 10%;
+    height: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+.list--todo--delete .fas {
+   margin-top: 0.5em;
+}
+.list--todo--delete .fas:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.list--clear {
+    width: 100%;
+    height: 4em;
+}
+.list--clear button {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2.5em;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid white;
+    background-color: rgb(238, 236, 236);
+    border-radius: 0.5em;
+    padding: 0em 1em;
+}
+.list--clear button:hover{
+    cursor: pointer;
+    color:red;
+}
