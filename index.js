@@ -44,6 +44,7 @@ function renderThisListToHTML(thisList){
         //check for the one that list as done, when re-render in the list
         if(thisList[i].done){
             listTodoItem.style.textDecoration  = "line-through";
+            
             listTodoWrapper.style.backgroundColor =  "rgb(236, 236, 236)";
             listTodoCheck.style.backgroundColor = "red";
         };
@@ -58,11 +59,16 @@ function renderThisListToHTML(thisList){
             if(thisList[i].done){
                 listTodoItem.style.textDecoration  = "line-through";
                 listTodoWrapper.style.backgroundColor =  "rgb(236, 236, 236)";
-                listTodoCheck.style.backgroundColor = "red";
+                listTodoWrapper.style.color =  "black";
+                listTodoCheck.style.color = "rgb(46, 124, 50)";
+                listTodoItem.style.color = "black"
+
             }else{
                 listTodoItem.style.textDecoration  = "none";
                 listTodoWrapper.style.backgroundColor =  "unset";
-                listTodoCheck.style.backgroundColor = "rgb(238, 230, 230)";
+                listTodoCheck.style.color = "white";
+                listTodoItem.style.color = "white"
+             
             }
           
         });

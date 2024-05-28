@@ -2,12 +2,15 @@
     margin: 0; padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: rgb(63, 61, 61);
+}
 .title--app {
     text-align: center;
     margin-top: 1em;
     font-size: 3em;
     font-family: 'Oleo Script', cursive;
+    color: white;
 }
 
 .list--wrapper{
@@ -27,6 +30,8 @@
     height: 2.5em;
     font-size: 1.2em;
     padding-left: 0.4em;
+    border-radius: 5px;
+    border: unset;
 }
 
 #submit {
@@ -34,6 +39,7 @@
     padding: 0.3em 1.2em;
     border: 1px solid black;
     background-color: white;
+    border-radius: 5px;
 }
 
 #submit:hover{
@@ -45,6 +51,7 @@
 .list--list {
     width: 100%;
     margin-top: 5em;
+    color: white;
 }
 .list--todo--wrapper {
     width: 100%;
@@ -53,25 +60,27 @@
     flex-flow: row nowrap;
     margin-bottom:  1em;
     border-radius: 0.3em;
+    border-bottom: 2px solid white;
 }
 .list--todo--wrapper:hover{
     background-color: rgb(236, 236, 236);
+    color: black;
 }
 .list--todo--check {
     width: 10%;
     height: 100%;
     font-size: 1.5em;
     text-align: center;
-    background :rgb(238, 230, 230);
     color: white;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
 }
 .list--todo--check .fas{
     margin-top: 0.5em;
 }
 .list--todo--check:hover{
     cursor: pointer;
-    background-color: red;
-    color: white;
+    color: rgb(46, 124, 50);
 }
 
 .list--todo--item {
@@ -81,6 +90,7 @@
     overflow: hidden;
     line-height: 2em;
     padding-left: 1em;
+    color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .list--todo--delete{
@@ -88,6 +98,7 @@
     height: 100%;
     font-size: 1.5em;
     text-align: center;
+    color: rgb(245, 241, 241);
 }
 .list--todo--delete .fas {
    margin-top: 0.5em;
